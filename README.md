@@ -12,7 +12,7 @@ This is a Catkin package. Make sure the package is on `ROS_PACKAGE_PATH` after c
 
 ```
 cd your_work_space
-catkin_make --pkg lslidar_n301_driver lslidar_n301_decoder --cmake-args -DCMAKE_BUILD_TYPE=Release
+catkin_make 
 ```
 
 ## Example Usage
@@ -66,7 +66,7 @@ This is only published when the `publish_point_cloud` is set to `true` in the la
 **Node**
 
 ```
-roslauch lslidar_n301_decoder lslidar_n301_decoder_nodelet.launch
+roslaunch lslidar_n301_decoder lslidar_n301.launch
 ```
 
 Note that this launch file launches both the driver and the decoder, which is the only launch file needed to be used.
